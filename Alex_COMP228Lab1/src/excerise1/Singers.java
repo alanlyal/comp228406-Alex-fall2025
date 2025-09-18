@@ -7,11 +7,11 @@ public class Singers {
         private int albums;
    public Singers(int id, String name, String address, String birthday, int albums)
    {
-       this.id = id;
-       this.name = name;
-       this.address=address;
-       this.birthday=birthday;
-       this.albums=albums;
+      this.id=id;
+      this.name=name;
+      this.address=address;
+      this.birthday=birthday;
+      this.albums=albums;
    }
    public Singers()
    {
@@ -26,14 +26,13 @@ public class Singers {
     public void setAddress(String address){this.address=address;}
     public void setBirthday(String birthday){this.birthday=birthday;}
     public void setAlbums(int albums){this.albums=albums;}
-    public void setAll(int id, String name, String address, String birthday, int albums )
+    public void setall(int id, String name, String address, String birthday, int albums)
     {
         this.id=id;
         this.name=name;
         this.address=address;
         this.birthday=birthday;
-        this. albums= albums;
-        //im a bit confused on why we need set all when its seems like its doing the same thing as the singers constructor
+        this.albums=albums;
     }
     public int getId(){return id;}
     public String getName(){return name;}
