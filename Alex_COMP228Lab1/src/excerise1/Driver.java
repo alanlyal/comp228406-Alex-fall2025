@@ -11,7 +11,7 @@ public class Driver {
         System.out.println("# of ablums released:" + singer.getAlbums());
         System.out.println("-----------------------------------------------");
         //BBNO$
-        singer.setall(2,"Bbno$,", "Vancouver, bc canada","june 30, 1995",18);
+        singer.setall(2,"Bbno$", "Vancouver, bc canada","june 30, 1995",18);
         System.out.println("first Singer");
         System.out.println("id:" + singer.getId());
         System.out.println("name:" + singer.getName());
