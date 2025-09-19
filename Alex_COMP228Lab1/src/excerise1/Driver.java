@@ -3,6 +3,7 @@ package excerise1;
 public class Driver {
     public static void main(String[] args){
         Singers singer = new Singers();
+        System.out.println("Alex Huberdeau 310494731");
         System.out.println("Defaults");
         System.out.println("id:" + singer.getId());
         System.out.println("name:" + singer.getName());
