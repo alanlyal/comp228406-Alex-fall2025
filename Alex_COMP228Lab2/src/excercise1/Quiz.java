@@ -1,5 +1,5 @@
 package excercise1;
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class Quiz {

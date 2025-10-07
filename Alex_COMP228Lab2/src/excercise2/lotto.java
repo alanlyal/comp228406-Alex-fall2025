@@ -1,5 +1,5 @@
 package excercise2;
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.Random;
 
 public class lotto {
