@@ -1,6 +1,6 @@
 package excercise1;
 import java.util.Random;
-
+import javax.swing.JOptionPane;
 public class Quiz {
     int correct = 0;
     int incorrect = 0;

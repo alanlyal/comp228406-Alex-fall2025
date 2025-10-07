@@ -1,6 +1,6 @@
 package excercise2;
 import java.util.Random;
-
+import javax.swing.JOptionPane;
 public class lotto {
     private Random random = new Random();
     private int[] nums = new int[3];
