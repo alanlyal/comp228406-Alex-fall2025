@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            prefWidth="960" prefHeight="600">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Header -->
+    <top>
+        <HBox spacing="10" styleClass="p-3 bg-light border-bottom">
+            <Label text="👤 User Information Application" styleClass="h4 m-0"/>
+        </HBox>
+    </top>
+
+    <!-- Content -->
+    <center>
+        <HBox spacing="16" styleClass="p-3">
+            <!-- Form Card -->
+            <VBox spacing="10" styleClass="card p-4" HBox.hgrow="NEVER" prefWidth="360">
+                <Label text="First Name:" styleClass="fw-bold"/>
+                <TextField promptText="e.g., John" styleClass="form-control"/>
+
+                <Label text="Last Name:" styleClass="fw-bold"/>
+                <TextField promptText="e.g., Doe" styleClass="form-control"/>
+
+                <Label text="Age:" styleClass="fw-bold"/>
+                <TextField promptText="e.g., 19" styleClass="form-control"/>
+
+                <Label text="Favorite Color:" styleClass="fw-bold"/>
+                <TextField promptText="e.g., Blue" styleClass="form-control"/>
+
+                <Label text="College Program:" styleClass="fw-bold"/>
+                <TextField promptText="e.g., Software" styleClass="form-control"/>
+
+                <HBox spacing="8" styleClass="pt-2">
+                    <Button text="Submit" styleClass="btn btn-primary"/>
+                    <Button text="View Records" styleClass="btn btn-info"/>
+                </HBox>
+
+                <Label text="" styleClass="text-muted small pt-2"/>
+            </VBox>
+
+            <!-- Table Card -->
+            <VBox spacing="10" styleClass="card p-3" HBox.hgrow="ALWAYS">
+                <Label text="Student Records" styleClass="h5 mb-2"/>
+                <TableView VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn text="First Name" prefWidth="180"/>
+                        <TableColumn text="Last Name" prefWidth="180"/>
+                        <TableColumn text="Details" prefWidth="100"/>
+                    </columns>
+                </TableView>
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- Footer -->
+    <bottom>
+        <HBox spacing="12" styleClass="p-2 bg-light border-top">
+            <Label text="Total Records:" styleClass="text-muted"/>
+            <Label text="0" styleClass="fw-bold"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Label text="DB: Disconnected" styleClass="text-muted"/>
+        </HBox>
+    </bottom>
+</BorderPane>
