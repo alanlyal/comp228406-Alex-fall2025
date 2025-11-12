@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.example.Student"
+            prefWidth="800" prefHeight="600">
+   <center>
+       <VBox spacing="4">
+           <HBox spacing="4">
+           <Label text="full name (first and last name):" minWidth="100"/>
+           <TextField fx:id="Name"/>
+       </HBox>
+           <HBox spacing="4">
+               <Label text="adress:" minWidth="100"/>
+               <TextField fx:id="Address"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="city:" minWidth="100"/>
+               <TextField fx:id="City"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="province/territory:" minWidth="100"/>
+               <TextField fx:id="Province"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="postal code:" minWidth="100"/>
+               <TextField fx:id="PostalCode"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="phone number:" minWidth="100"/>
+               <TextField fx:id="PhoneNum"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="email:" minWidth="100"/>
+               <TextField fx:id="Email"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="major:" minWidth="100"/>
+               <RadioButton fx:id="Business" text="busines"/>
+               <RadioButton fx:id="ComScien" text="computer sceince"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="select classes" minWidth="100"/>
+               <ComboBox fx:id="selectClass"/>
+               <Button text="add class" onAction="#addClasses"/>
+           </HBox>
+           <HBox spacing="4">
+           <Label text="selectde class" minWidth="100"/>
+               <ListView fx:id="List" prefHeight="50"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text="type of work" minWidth="100"/>
+               <CheckBox fx:id="Volunteer" text="volunteer"/>
+               <CheckBox fx:id="Work" text="work"/>
+               <CheckBox fx:id="Research" text="reseach"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label minWidth="100"/>
+               <Button text="display student's info" onAction="#displayStudentInfo"/>
+           </HBox>
+           <HBox spacing="4">
+               <Label text ="student's info" minWidth="100"/>
+               <TextArea fx:id="Output" prefHeight="50"/>
+           </HBox>
+       </VBox>
+   </center>
+</BorderPane>
