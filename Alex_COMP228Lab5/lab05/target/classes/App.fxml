@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="Controller.AppControl">
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <HBox spacing="10">
+                <Label text="your first name:"/>
+                <TextField fx:id="firstName"/>
+                <Label text="your last name:"/>
+                <TextField fx:id="lastName"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="your address:"/>
+                <TextField fx:id="address"/>
+                <Label text="your postal code"/>
+                <TextField fx:id="postalCode"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="select your game"/>
+                <ComboBox fx:id="gameComboBox"/>
+            </HBox>
+            <HBox spacing="10">
+                <Label text="when did you start:"/>
+                <DatePicker fx:id="date"/>
+                <Label text="what is your score in the game"/>
+                <TextField fx:id="score"/>
+            </HBox>
+            <HBox spacing="10">
+              <Button fx:id="addPlayer" text="add player" onAction="#addPlayer"/>
+                <Button fx:id="assignGame" text="assign game to player" onAction="#assignGame"/>
+            </HBox>
+            <Label fx:id="status" text="status"/>
+        </VBox>
+    </center>
+</BorderPane>

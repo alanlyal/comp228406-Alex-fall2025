@@ -1,0 +1,9 @@
+DatabaseStuff\PlayerAndGameData.class
+DatabaseStuff\PlayerData.class
+Controller\AppControl.class
+model\Game.class
+DatabaseStuff\DBConnect.class
+DatabaseStuff\GameData.class
+model\Player.class
+model\PlayerAndGame.class
+com\opsdevelop\teaching\App.class
