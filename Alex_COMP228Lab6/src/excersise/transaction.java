@@ -21,5 +21,10 @@ public class transaction implements Runnable
         {
             account.withdraw(amount);
         }
+        else if(transType.equals("endBalance"))
+        {
+            System.out.println("balance: " + account.getBalance() + "$");
+        }
     }
+
 }
