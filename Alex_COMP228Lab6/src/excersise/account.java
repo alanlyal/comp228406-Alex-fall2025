@@ -18,4 +18,8 @@ public class account {
             System.out.println("widthdraw of "+ amount +"$ failed as you dont have the funds");
         }
     }
+    public synchronized double getBalance()
+    {
+        return balance;
+    }
 }
